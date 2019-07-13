@@ -1,0 +1,10 @@
+<article [ngClass]="className">
+    <!-- el_a-->
+    <app-a [url]="item.url"></app-a>
+    <div class="c12_card">
+        <!-- c5 -->
+        <div app-c5 class="c5" [image]="item.image" [title]="item.title"></div>
+        <!-- c15 -->
+        <div app-c15 [item]="item" class="c15"></div>
+    </div>
+</article>

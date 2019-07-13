@@ -1,0 +1,21 @@
+<section class="m7 -shadowLight -padding-top -padding-bottom-plus" data-analytics-region="mod_spotlight_2">
+    <div class="wrapper">
+        <div class="container">
+            <div class="m7_body">
+                <div class="row">
+                    <!-- c12 -->
+                    <ng-container *ngFor="let item of data">
+                        <div app-c12 class="col-md-4" *ngIf="item.image" [item]="item"></div>
+                    </ng-container>
+                    <div class="col-md-4">
+                        <ul class="listing -flexBlock">
+                            <ng-container *ngFor="let item of data">
+                                <li app-c12 *ngIf="!item.image" [item]="item" class="listing_item"></li>
+                            </ng-container>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
