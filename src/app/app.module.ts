@@ -14,6 +14,7 @@ import { HeaderComponent } from "./components/header/header.component";
 import { ReadMoreComponent } from "./components/read-more/read-more.component";
 import { ContentComponent } from "./components/content/content.component";
 import { SpanComponent } from "./elements/span/span.component";
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SpanComponent } from "./elements/span/span.component";
     HeaderComponent,
     ReadMoreComponent,
     ContentComponent,
-    SpanComponent
+    SpanComponent,
+    TestComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
